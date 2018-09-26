@@ -46,3 +46,12 @@ h5{
 li{
   font-size: 1em;
 }
+
+div #name {
+	border: 1px solid #33485e;
+	width: 60%;
+	min-width: 300px:
+	margin: "0 auto";
+	}
+	
+  
