@@ -8,17 +8,56 @@ body{
 }
 
 #container{
-	width: 100%
-	max-width: 1200px;
 	margin: "0 auto";
 	padding-bottom: 50px;
+	max-width: 1200px;
+	width: 100%
 	}
 
-title{
-  text-transform: uppercase;
-  font-size: 1.5em;
-  color: #33485e;
-}
+/*what did you do!*/
+.name {
+text-align: center;
+font-size: 1.5em;
+text-transform: capitalize;
+text-align: center;
+border-bottom: 1px solid #33485e;
+width: 60%;
+min-width: 300px:
+	}
+
+
+
+/*just for contact info*/
+
+#menu{
+	text-align: center;
+	display: inline;
+	margin-top: 0;
+	margin-bottom: 0;
+	margin-left: 0;
+	margin-right: 0;
+	padding-top: 0;
+	padding-bottom:0;
+	padding-left: 0;
+	padding-right: 0;
+	}
+
+	.title{
+		font-weight:600;
+		text-align: center;
+		margin-top: 20px;
+		margin-bottom: 0px;
+		margin-left: 0px;
+		margin-right: 0px;
+	}
+
+	#top{
+		width: 60%;
+		min-width: 300px;
+		margin: "0 auto";
+		margin-bottom: 30px;
+		text-align: center;
+		}
 
 #organization{
   font-size: 1.25em;
@@ -39,16 +78,6 @@ li{
   font-size: 1em;
 }
 
-/*i think this is right!*/
-#name{
-	border-bottom: 1px solid #33485e;
-	width: 60%;
-	min-width: 300px:
-	margin: "0 auto";
-	font-size: 3em;
-  	text-transform: uppercase;
-  	text-align: center;
-	}
 
 #sectionheader{
 	margin-top: 20px;
@@ -79,7 +108,9 @@ li{
 	}
 
 /*just for contact info*/
+
 .menu{
+	display:inline;
 	margin-top: 0;
 	margin-bottom: 0;
 	margin-left: 0;
@@ -88,8 +119,7 @@ li{
 	padding-bottom:0;
 	padding-left: 0;
 	padding-right: 0;
-	text-align: center;
-	display: inline;
+	text-align:center;
 	}
 
 .description{
@@ -111,34 +141,4 @@ li{
 	margin-bottom: 0;
 	margin-left: 0;
 	margin-right: 0;
-	}
-
-.title{
-	font-weight:600;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	margin-right: 0px;
-}
-
-/*something is missing here, so this is supplementary*/
-.selfdesrcipt{
-	margin-top: 20px;
-	margin-bottom: 10px;
-	margin-left: 0px;
-	margin-right: 0px;
-	width: 70%;
-	min-width: 300px;
-	font-size: 1.5em;
-		text-transform: uppercase;
-	font-weight: 500;
-}
-
-#top{
-	width: 60%;
-	min-width: 300px;
-	margin: "0 auto";
-	margin-bottom: 30px;
-	text-align: center;
 	}
