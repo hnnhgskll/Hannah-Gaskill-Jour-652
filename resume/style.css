@@ -15,9 +15,9 @@ body{
 	}
 
 /*what did you do!*/
-.name {
+#name {
 text-align: center;
-font-size: 1.5em;
+font-size: 3em;
 text-transform: capitalize;
 text-align: center;
 border-bottom: 1px solid #33485e;
@@ -42,8 +42,11 @@ min-width: 300px:
 	padding-right: 0;
 	}
 
+/*for whatever ereason i can never get text-transform or text-align to work*/
+
 	.title{
 		font-weight:600;
+    text-transform: uppercase;
 		text-align: center;
 		margin-top: 20px;
 		margin-bottom: 0px;
@@ -100,6 +103,7 @@ li{
 
 #title{
 	font-weight: 600;
+  font-size: 2em;
 	text-align: center;
 	margin-top: 20px;
 	margin-bottom: 0px;
@@ -134,6 +138,8 @@ li{
 	margin-bottom: 0px;
 	margin-left: 0px;
 	margin-right: 0px;
+  text-align: center;
+  font-size: 1.5em;
 }
 
 .degrees{
