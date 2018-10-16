@@ -6,3 +6,45 @@
 	max-width: 1200px;
 	width: 100%
 	}
+
+	body{
+		background-color: #fefefe;}
+
+
+
+#title{
+	font-family: 'Playfair Display', serif;
+	font-size: 5em;
+  color: #fefefe;
+	alignment: 0, auto;
+
+}
+
+.jumbotron{
+	background-color: #e1e280!important;
+	height: 260px;
+	border-color: #fefefe;
+	border-width: medium;
+	opacity: 30%;
+}
+
+
+.subtitle{
+	font-family: 'Playfair Display', serif;
+	font-size: 3em;
+	color: #000000;
+	alignment: 0 auto;
+}
+
+#heading{
+	font-family: 'Playfair Display', serif;
+	font-size: 2em;
+	color: #000000;
+	alignment: 0 auto;
+}
+
+#text{
+		font-size: 2em;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Quicksand', sans-serif;
+}
