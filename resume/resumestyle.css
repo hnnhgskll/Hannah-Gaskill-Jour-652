@@ -37,6 +37,7 @@
 .jumbotron{
 	background-color: #25364f!important;
 	height: 260px;
+	min-width: 300px;
 }
 
 
@@ -59,6 +60,7 @@
 .text{
 		font-size: 16px;
     font-family: 'Krub', sans-serif;
+		min-width: 300px;
 }
 
 .paragraph{
