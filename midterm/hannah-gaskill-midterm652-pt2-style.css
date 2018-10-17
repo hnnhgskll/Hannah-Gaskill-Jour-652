@@ -1,3 +1,12 @@
+
+#container{
+  align:center;
+	margin: 0 auto;
+	padding-bottom: 50px;
+	max-width: 1200px;
+	width: 100%
+	}
+
 .graphs{
 font-family: helvetica, sans-serif;
 font-size: 12px;
@@ -6,9 +15,16 @@ font-size: 12px;
 #headline{
   font-family: 'Merriweather', serif;
   font-size: 4em;
+  text-align: center;
 }
 
 #subheads{
   font-family: font-family: 'Merriweather', serif;
   font-size: 1.5em;
+}
+
+.image{
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
