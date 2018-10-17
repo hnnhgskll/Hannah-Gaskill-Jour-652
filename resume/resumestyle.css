@@ -1,0 +1,97 @@
+/*styles for my resume midterm*/
+
+#container{
+	margin: 0 auto;
+	padding-bottom: 50px;
+	max-width: 1200px;
+	width: 100%
+	}
+
+	#secondborder{
+		border-width: 4px;
+		border-style: solid;
+		margin: 170px;
+		height: auto;
+	}
+
+	body{
+	background-color: #fefefe;
+	border-width:2px;
+	border-style:solid;
+	margin: 150px;
+}
+
+
+
+
+
+#title{
+	font-family: 'Scheherazade', serif;
+	font-size: 5em;
+  color: #fefefe;
+	alignment: 0, auto;
+
+}
+
+
+.jumbotron{
+	background-color: #25364f!important;
+	height: 260px;
+}
+
+
+.subtitle{
+	font-family: 'Scheherazade', serif;
+	font-size: 2.5em;
+	color: #000000;
+	alignment: 0 auto;
+}
+
+#heading{
+	font-family: 'Scheherazade', serif;
+	font-size: 2em;
+	color: #fefefe;
+	alignment: 0 auto;
+	width:400px;
+	background-color: #25364f;
+}
+
+.text{
+		font-size: 16px;
+    font-family: 'Krub', sans-serif;
+}
+
+.paragraph{
+	width: 1050px;
+}
+
+.jobtitle{
+	font-size: 24px;
+	font-family: 'Krub', sans-serif;
+}
+
+.organization{
+	font-size: 22px;
+	font-family: 'Krub', sans-serif;
+	font-style:italic;
+}
+
+.date{
+	font-size: 18px;
+	font-family: 'Krub', sans-serif;
+	font-style:oblique;
+}
+
+.jobdescription{
+	font-size: 16px;
+	font-family: 'Krub', sans-serif;
+	width: 500px;
+}
+
+
+
+.forfooter{
+	color: #fefefe;
+	background-color: #25364f;
+	width: 1050px;
+}
