@@ -1,7 +1,7 @@
 
 #container{
   align:center;
-	margin: auto;
+	margin: 0 auto;
 	padding-bottom: 50px;
 	max-width: 1200px;
 	width: 100%
@@ -60,6 +60,17 @@ text-align:justify;
 }
 
 .question{
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  text-align: center;
+  font-style: italic;
+}
+
+#center{
+  margin: 0 auto;
+}
+
+.clarify{
   font-family: 'Merriweather', serif;
   font-size: 18px;
   text-align: center;
