@@ -1,7 +1,7 @@
 
 #container{
   align:center;
-	margin: 0 auto;
+	margin: auto;
 	padding-bottom: 50px;
 	max-width: 1200px;
 	width: 100%
@@ -10,6 +10,7 @@
 .graphs{
 font-family: helvetica, sans-serif;
 font-size: 12px;
+text-align:justify;
 }
 
 #headline{
@@ -19,12 +20,47 @@ font-size: 12px;
 }
 
 #subheads{
-  font-family: font-family: 'Merriweather', serif;
-  font-size: 1.5em;
+  font-family: 'Merriweather', serif;
+  font-size: 24px;
+  text-align: center;
 }
 
-.image{
+.caps{
+  font-family: helvetica, sans-serif;
+  font-size: 10px;
   text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.byline{
+  font-family: helvetica, sans-serif;
+  font-size: 12px;
+  text-align: center;
+}
+
+.pull{
+  font-family: 'Merriweather', serif;
+  font-size: 30px;
+  color: #900C3F ;
+  width: 700px;
+  text-align: center;
+}
+
+.burners{
+  font-family: helvetica, sans-serif;
+  font-size: 16px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.bio{
+  font-family: helvetica, sans-serif;
+  font-size:13px;
+  text-align: center;
+  font-style: italic;
+}
+
+.question{
+  font-family: 'Merriweather', serif;
+  font-size: 18px;
+  text-align: center;
 }
