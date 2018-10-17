@@ -85,7 +85,7 @@
 .jobdescription{
 	font-size: 16px;
 	font-family: 'Krub', sans-serif;
-	width: 500px;
+	max-width: 500px;
 }
 
 
