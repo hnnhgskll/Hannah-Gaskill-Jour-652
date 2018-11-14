@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Meta stuff-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Final project template">
+    <meta name="author" content="Hannah Gaskill">
+  <!--call to css-->
+    <link rel="css" href="style.css">
+  <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+  <!--C3JS Call-ins-->
+    <!-- Load c3.css -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
+      <!-- Load our CSS -->
+        <link rel="stylesheet" href="style.css">
+        <!-- Load d3.js and c3.js -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+    <!--GOOGLE FONT-->
+      <link href="https://fonts.googleapis.com/css?family=Merriweather|Roboto" rel="stylesheet">
+</head>
+<body>
+  <div id=container>
+<!-- NavBar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <!-- Link -->
+        <li class="nav-item">
+          <a class="nav-link" href="#">Link</a>
+        </li>
+        <!-- End Link -->
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Dropdown
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Action</a>
+            <a class="dropdown-item" href="#">Another action</a>
+            <div class="dropdown-divider"></div>
+            <a class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled" href="#">Disabled</a>
+        </li>
+      </ul>
+      <form class="form-inline my-2 my-lg-0">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+ <!-- End NavBar -->
+
+<!--HEADLINE-->
+  <div class="headline">The headline goes here</div>
+<!--BYLINE-->
+  <div class="byline">BY BYLINE</div>
+  <br>
+  <br>
+  <br>
+<!--CHAPTER HEADLINE-->
+  <div class="chapter">Chapter Headline</div>
+  <br>
+<!--TEXT-->
+  <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+    ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+    proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+    <br>
+<!--IMAGE-->
+<img class="picture" src="img/grumpycat.jpg" alt="Plump Tiger Cub" width= 600px>
+<!--CAPTION-->
+  <div class="caption"><figcaption>Fig.1 - A plump tiger cub.</figcaption></div>
+  <br>
+  <br>
+  <!--TEXT-->
+    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
+      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+  <br>
+  <br>
+  <br>
+<!--THREE COLUMN ROW-->
+  <div class="row">
+    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
+    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
+    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
+  </div>
+  <br>
+  <br>
+  <br>
+
+  <!-- first graphic container-->
+   <div class="graphic-container">
+     <h2>Shootings by year</h2>
+     <p>The number of shootings per year has generally remained high in the US since the turn of
+       the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number
+       of shootings has been consistantly high.</p>
+     <div id="myLineChart"></div>
+     <em>Source: Data collected by The Washington Post</em>
+   </div>
+   <!-- END first graphic container-->
+   <!--START second graphic container-->
+   <div class="graphic-container">
+       <h2>Shooting by Type</h2>
+       <p>Here is some info about shooting types</p>
+       <div id="shootingsByTypeChart"></div>
+       <em>Source: Data collected by The Washington Post</em>
+     </div>
+     <!--END second graphic container-->
+     <!--START third graphic container-->
+ <div class="OkCupid Gender">
+     <h2>Simple Gender Chart</h2>
+     <p>Here is some simply broken down info about gender identity on OkCupid</p>
+     <div id="simplegenderChart"></div>
+     <em>Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</em>
+   </div>
+   <!--END third graphic container-->
+     <!--START fourth graphic conatiner-->
+     <div class="graphic-container">
+         <h2>Categories of Women Identities.</h2>
+         <p>Out of the "Other" category in the gender chart, 49 of 198 disclosed that some part of their identity is woman-aligned.
+           Here are how LGBTQIA+ women identities are broken down.</p>
+         <div id="womenidChart"></div>
+         <em>Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</em>
+       </div>
+       <!--END fourth graphic container-->
+       <!--START fourth graphic conatiner-->
+       <div class="graphic-container">
+           <h2>Categories of Men Identities.</h2>
+           <p>Out of the "Other" category in the gender chart, 34 of 198 disclosed that some part of their identity is man-aligned.
+             Here are how LGBTQIA+ men identities are broken down.</p>
+           <div id="menidChart"></div>
+           <em>Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</em>
+         </div>
+         <!--END fourth graphic container-->
+         <!--START fourth graphic conatiner-->
+         <div class="graphic-container">
+             <h2>Categories Existing Outside of the Binary.</h2>
+             <p>Here are how LGBTQIA+ identities that don't fit into the binary are broken down.</p>
+             <div id="binaryidChart"></div>
+             <em>Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</em>
+           </div>
+           <!--END fourth graphic container-->
+     <!--START fifth graphic conatiner-->
+     <div class="graphic-container">
+         <h2>Where do school shootings occur?</h2>
+         <p>Here is some info about where school shootings occur.</p>
+         <div id="whereChart"></div>
+         <em>Source: Data collected by The Washington Post</em>
+       </div>
+       <!--END fifth graphic container-->
+       <!--START sixth graphic conatiner-->
+       <div class="graphic-container">
+           <h2>Examining the carnage</h2>
+           <p>Here is some info about the number of people killed by year.</p>
+           <div id="killedbyyearChart"></div>
+           <em>Source: Data collected by The Washington Post</em>
+         </div>
+         <!--END sixth graphic container-->
+<!--FOOTER-->
+  <div class="footer"><footer>
+    Footer Text
+  </footer></div>
+
+ <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+  crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+  crossorigin="anonymous"></script>
+
+  <!-- c3 script-->
+ <script type="text/javascript">
+
+
+ //CHART 1
+ var chart = c3.generate({
+   bindto: '#myLineChart',
+   data: {
+     x: 'x',
+     columns: [
+       ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+       2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+       2014, 2015, 2016, 2017, 2018],
+       ['Number of Incidents', 7, 12, 13, 5, 11, 9, 13,
+       15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+     ]
+   },
+   color: {
+     pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+   }
+ });
+
+
+ //CHART 2
+ var chart2 = c3.generate({
+   bindto: '#shootingsByTypeChart',
+   data: {
+     columns: [
+       ['Targeted', 130],
+       ['indiscriminate', 42],
+       ['Accidental', 25],
+       ['Targeted and indiscriminate', 5],
+       ['Public suicide', 4],
+       ['Unclear', 3],
+       ['hostage suicide', 2],
+       ['Accidental or targeted', 2],
+       ['Public suicide (attempted)', 1]
+     ],
+     type: 'bar'
+   },
+   color: {
+     pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+   }
+ });
+
+
+ //CHART 3
+ var chart3 = c3.generate({
+  bindto: '#simplegenderChart',
+  data: {
+    // iris data from R
+    columns: [
+      ['Man', 40215],
+      ['Woman', 25952],
+      ['Other', 198]
+    ],
+    type : 'pie',
+    onclick: function (d, i) { console.log("onclick", d, i); },
+    onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+  },
+  color: {
+    pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+  }
+});
+
+
+//CHART 3
+var chart3 = c3.generate({
+ bindto: '#womenidChart',
+ data: {
+   // iris data from R
+   columns: [
+     ['Cis Woman', 11],
+     ['Cis Woman +', 5],
+     ['Trans Woman', 7],
+     ['Trans Woman +', 14],
+     ['Gender Queer', 4],
+     ['Gender Queer +', 12],
+     ['Gender Nonconforming', 1],
+     ['Gender Nonconforming +', 5],
+     ['Non-binary +', 11],
+     ['Genderfluid +', 4],
+     ['Bigender +', 2],
+     ['Androgynous', 1],
+     ['Androgynous +', 3],
+     ['Two Spirit', 1],
+     ['Transfeminine +', 3],
+     ['Transmasculine +', 1],
+     ['Other +', 3],
+     ['Transgender', 3],
+     ['Transgender +', 12],
+
+   ],
+   type : 'pie',
+   onclick: function (d, i) { console.log("onclick", d, i); },
+   onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+   onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+
+//CHART 3
+var chart3 = c3.generate({
+ bindto: '#menidChart',
+ data: {
+   // iris data from R
+   columns: [
+     ['Cis Man', 1],
+     ['Cis Man +', 10],
+     ['Gender Fluid', 5],
+     ['Gender Fluid +', 4],
+     ['Gender Nonconforming', 2],
+     ['Gender Nonconforming +', 9],
+     ['Agender +', 3],
+     ['Androgynous', 1],
+     ['Androgynous +', 3],
+     ['Other +', 4],
+     ['Gender Queer', 1],
+     ['Gender Queer +', 5],
+     ['Trans Man', 2],
+     ['Trans Man +', 6],
+     ['Transfeminine +', 1],
+   ],
+   type : 'pie',
+   onclick: function (d, i) { console.log("onclick", d, i); },
+   onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+   onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+
+//CHART 3
+var chart3 = c3.generate({
+ bindto: '#binaryidChart',
+ data: {
+   // iris data from R
+   columns: [
+     ['Gender Queer', 7],
+     ['Gender Queer +', 39],
+     ['Gender Fluid', 6],
+     ['Gender Fluid +', 21],
+     ['Non-Binary', 5],
+     ['Non-Binary +', 28],
+     ['Gender Nonconforming', 3],
+     ['Gender Nonconforming +', 27],
+     ['Agender', 3],
+     ['Agender +', 6],
+     ['Androgynous', 1],
+     ['Androgynous +', 12],
+     ['Bigender +', 3],
+     ['Other', 4],
+     ['Other +', 10],
+     ['Intersex', 1],
+     ['Intersex +', 2],
+
+   ],
+   type : 'pie',
+   onclick: function (d, i) { console.log("onclick", d, i); },
+   onmouseover: function (d, i) { console.log("onmouseover", d, i); },
+   onmouseout: function (d, i) { console.log("onmouseout", d, i); }
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+
+//CHART 5
+var chart5 = c3.generate({
+ bindto: '#whereChart',
+ data: {
+   columns: [
+     ['City', 101],
+     ['Suburb', 58],
+     ['Town', 24],
+     ['Rural', 5]
+   ],
+   type: 'bar'
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895', '#fae255', '#af3d46', '#f8bb63', '#818281']
+ }
+});
+
+
+//CHART 6
+var chart = c3.generate({
+ bindto: '#killedbyyearChart',
+ data: {
+   x: 'x',
+   columns: [
+     ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005,
+     2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013,
+     2014, 2015, 2016, 2017, 2018],
+     ['Casualties by year', 14, 4, 5, 1, 5, 3, 9, 9, 1,
+     5, 1, 3, 2, 32, 3, 6, 0, 2, 5, 21],
+     ['Injuries by year', 35, 3, 22, 7, 7, 9, 17, 16, 17,
+     5, 4, 6, 9, 8, 13, 14, 2, 18, 15, 44],
+     ['Incidents per year', 7, 12, 13, 5, 11, 9, 13, 15,
+     10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
+   ]
+ },
+ color: {
+   pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
+ }
+});
+
+
+
+</script>
+</div>
+</body>
+</html>
