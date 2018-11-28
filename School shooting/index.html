@@ -1,148 +1,170 @@
 <!DOCTYPE html>
+<!--I BUILT THIS MYSELF-->
 <html lang="en">
-<head>
-  <!--Meta stuff-->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="School Shootings An American Tragedy">
-    <meta name="author" content="Hannah Gaskill">
-  <!--call to css-->
-    <link rel="css" href="style.css">
-  <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
-    integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-  <!--C3JS Call-ins-->
-    <!-- Load c3.css -->
+  <head>
+
+    <!--Meta stuff-->
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+     <meta name="description" content="School Shootings An American Tragedy">
+     <meta name="author" content="Hannah Gaskill">
+
+
+   <!--call to css-->
+     <link rel="css" href="style.css">
+    <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"
+     integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!--C3JS Call-ins-->
+     <!-- Load c3.css -->
       <link href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.css" rel="stylesheet">
-      <!-- Load our CSS -->
-        <link rel="stylesheet" href="style.css">
-        <!-- Load d3.js and c3.js -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+     <!-- Load our CSS -->
+       <link rel="stylesheet" href="style.css">
+     <!-- Load d3.js and c3.js -->
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
+
+
     <!--GOOGLE FONT-->
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Serif:400,700" rel="stylesheet">
 
-</head>
-<body>
-  <div id="grad">
-<!-- NavBar -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <a class="navbar">
-    <a class="navbar-brand" href="#"><span class="nav-title"><img class="nav-star" src="images/star-red.png"><img class="nav-star" src="images/star-blue.png">An American Tragedy</span></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto">
-        <li class="nav-item active">
-        </li>
-        <!-- Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="nav-cats">Where & When</span></a>
-        </li>
-        <!-- End Link -->
-        <!-- Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="nav-cats">The Carnage</span></a>
-        </li>
-        <!-- End Link -->
-        <!-- Link -->
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="nav-cats">A Profile</span></a>
-        </li>
-        <!-- End Link -->
-      </ul>
-    </a>
-    </div>
-  </nav>
+  </head>
+
+
+
+  <body>
+   <div id="grad">
+
+   <!-- NavBar -->
+     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+       <a class="navbar">
+         <a class="navbar-brand" href="#"><span class="nav-title"><img class="nav-star" src="images/star-red.png"><img class="nav-star" src="images/star-blue.png">An American Tragedy</span></a>
+         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <span class="navbar-toggler-icon"></span>
+         </button>
+
+         <div class="collapse navbar-collapse" id="navbarSupportedContent">
+           <ul class="navbar-nav mr-auto">
+             <li class="nav-item active">
+             </li>
+
+         <!-- Link -->
+         <li class="nav-item">
+           <a class="nav-link" href="#WhereWhen"><span class="nav-cats">Where & When</span></a>
+         </li>
+         <!-- End Link -->
+
+         <!-- Link -->
+         <li class="nav-item">
+           <a class="nav-link" href="#TheCarnage"><span class="nav-cats">The Carnage</span></a>
+         </li>
+         <!-- End Link -->
+
+         <!-- Link -->
+         <li class="nav-item">
+           <a class="nav-link" href="#Profile"><span class="nav-cats">A Profile</span></a>
+         </li>
+         <!-- End Link -->
+
+        </ul>
+       </a>
+      </div>
+     </nav>
  <!-- End NavBar -->
-<!--CONTAINER-->
-<div id="container">
 
-<!--HERO IMAGE-->
-<img class="hero-image" src="images/AR15.jpg">
 
-<!--HEADLINE-->
+ <!--CONTAINER-->
+  <div id="container">
+
+ <!--HERO IMAGE-->
+  <img class="hero-image" src="images/AR15.jpg">
+
+ <!--HEADLINE-->
   <div class="headline">An <span class="blue">American</span> Tragedy</div>
-  <br>
-<!--SUBLINE-->
+<br>
+
+ <!--SUBLINE-->
   <div class="sub-line"> Over 200 school shootings in two decades.<br>What have we learned?</div>
   <br>
-<!--STARS-->
-<img class="nav-star" src="images/star-red.png">
-<img class="nav-star" src="images/star-blue.png">
-<img class="nav-star" src="images/star-red.png">
-<img class="nav-star" src="images/star-blue.png">
-  <br>
-  <br>
-<!--TEXT-->
+
+ <!--STARS-->
+  <img class="nav-star" src="images/star-red.png">
+  <img class="nav-star" src="images/star-blue.png">
+  <img class="nav-star" src="images/star-red.png">
+  <img class="nav-star" src="images/star-blue.png">
+<br>
+<br>
+
+ <!--TEXT-->
   <div class="intro-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
     ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
     voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
     proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-    <br>
-<!--NEW CHAPTER-->
+<br>
+
+ <!--NEW CHAPTER-->
   <div class="row">
-    <div class="chap-title">
-      <img class="nav-star" src="images/star-blue.png">
-      <img class="nav-star" src="images/star-red.png">
-      Chapter title</div>
-<!--CHAPTER TEXT-->
-<div class="row">
-<div class="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum varius sit amet. Auctor elit sed vulputate mi. Enim lobortis scelerisque fermentum dui faucibus in ornare quam. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Nibh sit amet commodo nulla facilisi nullam vehicula ipsum. Tristique nulla aliquet enim tortor at. Fermentum leo vel orci porta. Et sollicitudin ac orci phasellus egestas tellus rutrum. Porta non pulvinar neque laoreet suspendisse interdum consectetur. Id ornare arcu odio ut. Arcu risus quis varius quam quisque id diam vel. Ipsum consequat nisl vel pretium lectus quam id leo in. Quis varius quam quisque id. Congue eu consequat ac felis. Lacinia quis vel eros donec. Eget velit aliquet sagittis id consectetur purus ut faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+    <a name="WhereWhen">
+     <div class="chap-title">
+       <img class="nav-star" src="images/star-blue.png">
+       <img class="nav-star" src="images/star-red.png">
+        Chapter title</a></div>
+
+ <!--CHAPTER TEXT-->
+  <div class="row">
+    <p class="para-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      incididunt ut labore et dolore magna aliqua. Ullamcorper malesuada proin libero nunc consequat interdum
+      varius sit amet. Auctor elit sed vulputate mi. Enim lobortis scelerisque fermentum dui faucibus in ornare
+      quam. Pellentesque pulvinar pellentesque habitant morbi tristique senectus et netus et. Nibh sit amet
+      commodo nulla facilisi nullam vehicula ipsum. Tristique nulla aliquet enim tortor at. Fermentum leo vel
+      orci porta. Et sollicitudin ac orci phasellus egestas tellus rutrum. Porta non pulvinar neque laoreet
+      suspendisse interdum consectetur. Id ornare arcu odio ut. Arcu risus quis varius quam quisque id diam vel. Ipsum consequat nisl vel pretium lectus quam id leo in. Quis varius quam quisque id. Congue eu consequat ac felis. Lacinia quis vel eros donec. Eget velit aliquet sagittis id consectetur purus ut faucibus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames. Dui accumsan sit amet nulla facilisi morbi tempus iaculis.
+    </p>
 <br>
 <br>
-<center><img class="stack-image" src="images/alaina-petty.jpg"></div></center>
-<p class="caption">Caption: Insert image or video above</p>
+
+ <!--IMAGE-->
+  <a name="Profile"></a>
+    <img class="stack-image" src="images/alaina-petty.jpg"></div>
+      <p class="caption">Caption: Insert image or video above</p>
 <br>
 <br>
-<div class="para-text">Nulla facilisi morbi tempus iaculis. Ornare lectus sit amet est placerat in egestas. Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Orci ac auctor augue mauris augue neque gravida. Quam adipiscing vitae proin sagittis nisl rhoncus. Nulla posuere sollicitudin aliquam ultrices sagittis orci a scelerisque. Sit amet est placerat in. Odio ut sem nulla pharetra diam. Congue eu consequat ac felis donec. Nisl purus in mollis nunc sed id semper risus in.</div>
+
+ <!--CHAPTER TEXT-->
+  <p class="para-text">Nulla facilisi morbi tempus iaculis. Ornare lectus sit amet est placerat in egestas.
+    Laoreet non curabitur gravida arcu ac tortor dignissim convallis aenean. Orci ac auctor augue mauris
+    augue neque gravida. Quam adipiscing vitae proin sagittis nisl rhoncus. Nulla posuere sollicitudin
+    aliquam ultrices sagittis orci a scelerisque. Sit amet est placerat in. Odio ut sem nulla pharetra diam.
+    Congue eu consequat ac felis donec. Nisl purus in mollis nunc sed id semper risus in.</p>
 <br>
 <br>
-!-- Graphic container-->
-<div class="graphic-container">
-  <h2>Shootings by year</h2>
-  <p class="caption">The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
-  <div id="shootingsByYearChart"></div>
-  <div class="caption">Source: Data collected by The Washington Post</div>
-</div>
+
+ <!-- Graphic container-->
+  <a name="TheCarnage">
+  <h2 class="graphic-container">Shootings by year
+    <p class="caption">The number of shootings per year has generally remained high in the US since the turn of the century, with noticable dips in 2002, 2011 and 2015. The last three years, the number of shootings has been consistantly high.</p>
+    <div id="shootingsByYearChart"></div>
+    <div class="caption">Source: Data collected by The Washington Post</div></h2></a>
+  </div>
 <!-- END graphic container-->
 <br>
 <br>
-<div class="para-text">Ultrices eros in cursus turpis massa. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Pretium fusce id velit ut tortor. Sit amet justo donec enim diam vulputate ut pharetra sit. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Potenti nullam ac tortor vitae purus faucibus ornare suspendisse. Eu sem integer vitae justo eget magna. Cursus metus aliquam eleifend mi in nulla. Sem integer vitae justo eget magna fermentum iaculis. In egestas erat imperdiet sed euismod. Auctor elit sed vulputate mi sit.</div>
-</div>
 
+ <!--CHAPTER TEXT-->
+ <p class="para-text">Ultrices eros in cursus turpis massa. Phasellus faucibus scelerisque eleifend donec
+   pretium vulputate sapien. Pretium fusce id velit ut tortor. Sit amet justo donec enim diam vulputate ut
+   pharetra sit. Eu lobortis elementum nibh tellus molestie nunc non blandit massa. Potenti nullam ac
+   tortor vitae purus faucibus ornare suspendisse. Eu sem integer vitae justo eget magna. Cursus metus
+   aliquam eleifend mi in nulla. Sem integer vitae justo eget magna fermentum iaculis. In egestas erat
+   imperdiet sed euismod. Auctor elit sed vulputate mi sit.</p>
+ </div>
+  <br>
+  <br>
+  <br>
+  <br>
 
-
-
-<!--IMAGE-->
-<img class="picture" src="img/grumpycat.jpg" alt="Plump Tiger Cub" width= 600px>
-<!--CAPTION-->
-  <div class="caption"><figcaption>Fig.1 - A plump tiger cub.</figcaption></div>
-  <br>
-  <br>
-  <!--TEXT-->
-    <div class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-      incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation
-      ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
-      voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
-  <br>
-  <br>
-  <br>
-<!--THREE COLUMN ROW-->
-  <div class="row">
-    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
-    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
-    <div class="col-md-4" align="center"><div class="text">One of three columns</div></div>
-  </div>
-  <br>
-  <br>
-  <br>
-  <!--END CONTAINER-->
-  </div>
-<!--FOOTER-->
+ <!--FOOTER-->
   <div class="footer"><footer>
     Footer Text
   </footer>
@@ -150,29 +172,31 @@
  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
-  crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
-  crossorigin="anonymous"></script>
-</div>
-</div>
-<!-- c3 script-->
-<script>
-//CHART 1
-var chart = c3.generate({
- bindto: '#shootingsByYearChart',
- data: {
-   x: 'x',
-   columns: [
+    crossorigin="anonymous"></script>
+  </div>
+  </div>
+
+ <!-- c3 script-->
+  <script>
+   //CHART 1
+    var chart = c3.generate({
+    bindto: '#shootingsByYearChart',
+    data: {
+    x: 'x',
+    columns: [
      ['x', 1999, 2000, 2001, 2002, 2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2011, 2012, 2013, 2014, 2015, 2016, 2017, 2018],
      ['Number of incidents', 7, 12, 13, 5, 11, 9, 13, 15, 10, 9, 9, 9, 7, 11, 13, 16, 7, 13, 14, 12],
-   ]
- },
- color: {
+    ]
+   },
+  color: {
    pattern: ['#2a8dc5', '#455380', '#ee6a4b', '#60c4b2', '#973895']
- }
-});
-
-
+  }
+ });
      </script>
+ <!--END SCRIPT-->
+
 </body>
+
 </html>

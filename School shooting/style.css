@@ -105,6 +105,8 @@
 max-width:900px;
 margin:0 auto;
 padding-top:30px;
+width: 100%;
+text-align:center;
 }
 
 .footer{
@@ -114,7 +116,10 @@ padding-top:30px;
   font-size: 10px;
 	text-align: center;
   height: 100px;
-	margin: 25px;
+	padding-top: 25px;
+	padding-bottom: 25px;
+	padding-left: 25px;
+	padding-right: 25px;
 	width: 100%;
 }
 
@@ -125,8 +130,7 @@ margin:0 auto;
 padding-bottom:30px;
 font-family: 'Montserrat', sans-serif;
 color:#999;
-width: 100%;
-max-width: 900px;
+text-align: left;
 }
 
 .graphic-container{
@@ -151,4 +155,12 @@ p{
 
 .blue {
  color: #0052a5;
+}
+
+.chaptitle{
+	font-family: 'Montserrat', sans-serif;
+	font-size: 2em;
+	font-weight: 700;
+	padding-top: 20px;
+	width: 100%;
 }
