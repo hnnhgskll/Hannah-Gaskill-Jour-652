@@ -23,6 +23,12 @@
         <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.7.0/d3.min.js" charset="utf-8"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.6.8/c3.min.js"></script>
 
+  <!--BOOTSTRAP CAROUSEL HEAD-->
+  <!-- Start Bootstrap Carousel HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End Bootstrap Carousel HEAD section -->
+
     <!--GOOGLE FONT-->
        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Roboto" rel="stylesheet">
 
@@ -57,7 +63,7 @@
 
 
 <!--HEADLINE-->
-  <div class="headline">Online Dating: A Queer Safe Space? (not final title, working on it)</div>
+  <div class="headline">Article Title</div>
   <br>
   <p class="introtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
@@ -115,7 +121,23 @@ vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, j
 semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus.
 Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum.</p>
 <br>
-<h1>WEBSITE SCREENCAP IMAGE GLLERY GOES HERE!!!</h1>
+<!-- Start Bootstrap Carousel BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/lake.jpg" alt="Lake" title="Lake" id="wows1_0"/></li>
+		<li><img src="data1/images/landscape.jpg" alt="Landscape" title="Landscape" id="wows1_1"/></li>
+		<li><img src="data1/images/sunset.jpg" alt="Sunset" title="Sunset" id="wows1_2"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="Lake"><span><img src="data1/tooltips/lake.jpg" alt="Lake"/>1</span></a>
+		<a href="#" title="Landscape"><span><img src="data1/tooltips/landscape.jpg" alt="Landscape"/>2</span></a>
+		<a href="#" title="Sunset"><span><img src="data1/tooltips/sunset.jpg" alt="Sunset"/>3</span></a>
+	</div></div>
+<div class="ws_shadow"></div>
+</div>
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End Bootstrap Carousel BODY section -->
 <br>
 <p class="text">In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus
 elementum semper nisi. Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante,
@@ -192,6 +214,10 @@ nonummy id, metus.</p>
       Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing
       sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet
       orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+<br>
+<IMG SRC="img/queer1.jpg" width=300px>
+  <IMG SRC="img/queer2.jpg" width=300px>
+<br>
 <!--FOOTER-->
   <div class="footer"><footer>
     Footer Text
@@ -257,8 +283,8 @@ var chart3 = c3.generate({
    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
  },
  color: {
-   pattern: ['#4c7bd9', '#0341a5', '#ffafd8','#f93b66', '#3260c7', '#ff589d',
-   '#ff9bcb', '#154fa0', '#ed2379', '#c21f52', '#f17bae', '#457cbe', '#b0d8ee', '#c7d9ec', '#a7d3ec', '#ec3766', '#7da8d9', '#a3d0e9']
+   pattern: ['#fc5eb7', '#ab0563', '#ffafd8','#f93b66', '#b1638f', '#ff589d',
+   '#ff9bcb', '#fdd1ea', '#ed2379', '#c21f52', '#e24ca1', '#cd0576', '#e35ea9', '#760c48', '#ca75a5', '#ec3766', '#ff2aa2', '#d181ae','#9b0258']
  }
 });
 //CHART 3
@@ -290,7 +316,7 @@ var chart3 = c3.generate({
  },
  color: {
    pattern: ['#001295', '#7586ff', '#09135f','#333e91', '#354dfa', '#a2adff',
-   '#3b416b', '#3a3ad1', '#9797d1', '#2d2d64', '#f17bae', '#9696da', '#4f4fad', '#2525ce', '#a7d3ec', '#ec3766', '#7da8d9', '#2d2d6d']
+   '#3b416b', '#3a3ad1', '#9797d1', '#2d2d64', '#6666ff', '#9696da', '#4f4fad', '#2525ce', '#2e2e74']
  }
 });
 //CHART 4
@@ -323,8 +349,8 @@ var chart3 = c3.generate({
    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
  },
  color: {
-   pattern: ['#4c7bd9', '#0341a5', '#ffafd8','#f93b66', '#3260c7', '#ff589d',
-   '#ff9bcb', '#154fa0', '#ed2379', '#c21f52', '#f17bae', '#457cbe', '#b0d8ee', '#c7d9ec', '#a7d3ec', '#ec3766', '#7da8d9', '#a3d0e9']
+   pattern: ['#8763c3', '#44237b', '#756295','#bda4e6', '#642ac5', '#9f87c6',
+   '#8f50f7', '#62527c', '#ab92d5', '#833cf9', '#5724ab', '#8b61d0', '#5319b4', '#3f2b61', '#d1baf7', '#764bbe', '#c7acf3']
  }
 });
 
