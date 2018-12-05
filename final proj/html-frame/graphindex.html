@@ -30,7 +30,7 @@
 <body>
 <!-- NavBar -->
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" href="#">A Look into love</a>
+    <a class="navbar-brand" href="#">OkCompupid</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -58,13 +58,13 @@
 
 <!--HEADLINE-->
   <div class="headline">Online Dating: A Queer Safe Space? (not final title, working on it)</div>
-<!--BYLINE-->
-  <div class="byline">BY HANNAH GASKILL</div>
   <br>
   <p class="introtext">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.
   Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis,
   </p>
   <br>
+  <!--BYLINE-->
+    <div class="byline">BY HANNAH GASKILL</div>
   <br>
   <img src="img/binary.png" alt="Splash Image" width=250px>
 <!--CHAPTER HEADLINE-->
@@ -104,6 +104,10 @@
 <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis
 dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.
 Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu.</p>
+<br>
+<div class="row">
+  <div class="col-md-12" align="center">
+<div class="pull"><blockquote>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.</blockquote></div></div></div>
 <br>
 <p class="text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes,
 nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec,
@@ -146,19 +150,13 @@ nonummy id, metus.</p>
    </div>
    <!--END first graphic container-->
    <br>
-     <!--START second graphic conatiner-->
-     <div class="graphic-container">
-         <div class="chartit">Categories of Womyn-Aligned Identities.</div>
-         <p class="text">Gender is complicated. Out of the 198 people that disclosed gender information in the "Other" category categorized some part of their identity as woman-aligned.
-           Here are how LGBTQIA+ womyn identities are broken down.</p>
-         <div id="womenidChart"></div>
-         <div class="caption">Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</div>
-       </div>
-       <!--END second graphic container-->
-       <br>
+   <br>
+   For a comprehensive list of definitions of different gender identities, click<a href="http://www.transstudent.org/definitions/"> here</a>.
+   <br>
+   <br>
        <!--START third graphic conatiner-->
        <div class="graphic-container">
-           <div class="chartit">Categories of Masculine-Aligned Identities.</div>
+           <div class="chartit">Categories of Masculine-Aligned Identities</div>
            <p class="text">Gender is complicated. Out of the 198 people that disclosed gender information in the "Other" category categorized some part of their identity as man-aligned.
              Here are how LGBTQIA+ men identities are broken down.</p>
            <div id="menidChart"></div>
@@ -166,9 +164,19 @@ nonummy id, metus.</p>
          </div>
          <!--END third graphic container-->
          <br>
+         <!--START second graphic conatiner-->
+         <div class="graphic-container">
+             <div class="chartit">Categories of Feminine-Aligned Identities</div>
+             <p class="text">Gender is complicated. Out of the 198 people that disclosed gender information in the "Other" category categorized some part of their identity as woman-aligned.
+               Here are how LGBTQIA+ feminine identities are broken down.</p>
+             <div id="womenidChart"></div>
+             <div class="caption">Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</div>
+           </div>
+           <!--END second graphic container-->
+         <br>
          <!--START fourth graphic conatiner-->
          <div class="graphic-container">
-             <div class="chartit">Categories Existing Outside of the Binary.</div>
+             <div class="chartit">Categories Existing Outside of the Binary</div>
              <p class="text">Gender is complicated. Out of the 198 people that disclosed gender information in the "Other" category categorized some part of their identity as not fitting into the binary.</p>
              <div id="binaryidChart"></div>
              <div class="caption">Source: The OKCupid dataset: A very large public dataset of dating site users published by Emil Kirkegaard</div>
@@ -214,7 +222,7 @@ nonummy id, metus.</p>
     onmouseout: function (d, i) { console.log("onmouseout", d, i); }
   },
   color: {
-    pattern: ['#4c7bd9', '#a3d0e9', '#ec3766']
+    pattern: ['#4c7bd9', '#ff589d', '#8763c3']
   }
 });
 //CHART 2
@@ -281,8 +289,8 @@ var chart3 = c3.generate({
    onmouseout: function (d, i) { console.log("onmouseout", d, i); }
  },
  color: {
-   pattern: ['#4c7bd9', '#0341a5', '#ffafd8','#f93b66', '#3260c7', '#ff589d',
-   '#ff9bcb', '#154fa0', '#ed2379', '#c21f52', '#f17bae', '#457cbe', '#b0d8ee', '#c7d9ec', '#a7d3ec', '#ec3766', '#7da8d9', '#a3d0e9']
+   pattern: ['#001295', '#7586ff', '#09135f','#333e91', '#354dfa', '#a2adff',
+   '#3b416b', '#3a3ad1', '#9797d1', '#2d2d64', '#f17bae', '#9696da', '#4f4fad', '#2525ce', '#a7d3ec', '#ec3766', '#7da8d9', '#2d2d6d']
  }
 });
 //CHART 4
