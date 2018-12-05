@@ -1,4 +1,9 @@
-container{
+body{
+	background-color: white;
+	background-image: linear-gradient(#ffffff, #ffafd8);
+}
+
+#container{
 	margin:0 auto;
 	padding-bottom: 50px;
 	max-width: 960px;
@@ -6,11 +11,18 @@ container{
 	text-align: center;
 	}
 
+	.bground{
+		background-color: rgba(255, 175, 216, .5);
+	}
 
+.heroimg{
+	width: 30px;
+}
 
   .headline{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Crimson Text', serif;
     font-size: 4em;
+		color: #0047a7;
     font-style: strong;
     text-align: center;
   }
