@@ -17,6 +17,10 @@ body{
 
 .heroimg{
 	width: 30px;
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
 }
 
   .headline{
@@ -34,30 +38,49 @@ body{
   }
 
   .chapter{
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Crimson Text', serif;
     font-size: 2em;
+		color: #0047a7;
   }
+.introtext{
+  font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+	font-weight: 300;
+  text-align: center;
+	font-style: italic;
+}
+
 .text{
-  font-family: 'Merriweather', serif;
+	font-family: 'Roboto', sans-serif;
   font-size: 12px;
   text-align: left;
+
+	padding-left: 100px;
 }
 
 .caption{
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  color: #808080;
+  color: #ffffff;
   text-align: center;
 }
 
 .footer{
-  background-color: #000000;
+  background-color: #ffafd8;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   height: 100px;
 	min-width: 300px;
   text-align: center;
+}
+
+.chartit{
+	font-family: 'Roboto', sans-serif;
+  font-size: 1em;
+  text-align: left;
+	color: #0047a7;
+	font-style:italic;
 }
 
 .picture{
