@@ -76,7 +76,7 @@ body{
 }
 
 .footer{
-  background-color: #ffafd8;
+  background-color: #ffb8ca;
   color: #ffffff;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
@@ -91,6 +91,7 @@ body{
 	color: #0047a7;
 	font-size:1em;
 	width: 300px;
+  height: 100px;
 }
 
 .chartit{
