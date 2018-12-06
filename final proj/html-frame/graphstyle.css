@@ -15,12 +15,17 @@ body{
 		background-color: rgba(255, 175, 216, .5);
 	}
 
+	.nav{
+		color: #0047a7;
+		border: #ffb8ca;
+	}
+
 .heroimg{
-	width: 30px;
+	min-width: 10px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
+    width: 100%;
 }
 
   .headline{
@@ -56,6 +61,11 @@ body{
   text-align: left;
 
 	padding-left: 100px;
+}
+
+.fusion{
+	max-width: 500px;
+	min-width: 250px;
 }
 
 .caption{
@@ -114,7 +124,7 @@ margin: 0 auto;
   top: 50%;
   width: auto;
   margin-top: -22px;
-  padding: 16px;
+  padding: 20px;
   color: white;
   font-weight: bold;
   font-size: 18px;
@@ -135,7 +145,7 @@ margin: 0 auto;
 .slidetext {
   color: #f2f2f2;
   font-size: 15px;
-  padding: 8px 12px;
+  padding: 20px 20px;
   position: absolute;
   bottom: 8px;
   width: 100%;
@@ -157,7 +167,7 @@ margin: 0 auto;
   height: 15px;
   width: 15px;
   margin: 0 2px;
-  background-color: #bbb;
+  background-color: #ffb8ca;
   border-radius: 50%;
   display: inline-block;
   transition: background-color 0s ease;
