@@ -3,7 +3,11 @@ body{
 	background-image: linear-gradient(#ffffff, #ffa6c6);
 }
 
-
+/* For mobile phones: */
+[class*="heroimg"] {
+  width: 100%;
+	max-width: 300px;
+}
 
 #container{
 	margin:0 auto;
