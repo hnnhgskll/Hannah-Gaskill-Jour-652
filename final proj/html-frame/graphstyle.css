@@ -4,10 +4,13 @@ body{
 }
 
 /* For mobile phones: */
-[class*="heroimg"] {
+@media only screen and (max-width: 600px)
+{[class*="heroimg"] {
   width: 100%;
 	max-width: 300px;
-}
+}}
+
+
 
 #container{
 	margin:0 auto;
