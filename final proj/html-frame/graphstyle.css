@@ -31,10 +31,17 @@ body{
   .headline{
     font-family: 'Crimson Text', serif;
     font-size: 4em;
-		color: #0047a7;
+		color: #000000;
     font-style: strong;
     text-align: center;
   }
+
+	.highlight{
+		font-family: 'Crimson Text', serif;
+		font-size: 1em;
+		color: #83c5dd;
+		font-style: strong;
+	}
 
   .byline{
     font-family: 'Roboto', sans-serif;
@@ -57,7 +64,7 @@ body{
 
 .text{
 	font-family: 'Roboto', sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   text-align: left;
 
 	padding-left: 100px;
@@ -71,7 +78,7 @@ body{
 .caption{
   font-family: 'Roboto', sans-serif;
   font-size: 12px;
-  color: #ffffff;
+  color: #000000;
   text-align: center;
 }
 
@@ -89,23 +96,32 @@ body{
 	text-align:center;
 	font-family: 'Roboto', sans-serif;
 	color: #0047a7;
-	font-size:1em;
+	font-size:1.25em;
 	width: 300px;
   height: 100px;
+	font-weight: bold;
 }
 
 .chartit{
 	font-family: 'Roboto', sans-serif;
-  font-size: 1em;
+  font-size: 1.25em;
   text-align: left;
 	color: #0047a7;
 	font-style:italic;
+	font-weight:bold;
 }
 
 .picture{
 margin: 0 auto;
 }
 
+.note{
+	font-family: 'Roboto', sans-serif;
+  font-size: 12px;
+  color: #000000;
+  text-align: center;
+	width: 500px;
+}
 
 
 /*FOR THE SLIDESHOW*/
@@ -183,7 +199,7 @@ margin: 0 auto;
   -webkit-animation-name: fade;
   -webkit-animation-duration: 0s;
   animation-name: fade;
-  animation-duration: 500s;
+  animation-duration: 2500s;
 }
 
 @-webkit-keyframes fade {
