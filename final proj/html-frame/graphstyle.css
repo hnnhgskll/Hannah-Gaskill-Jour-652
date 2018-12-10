@@ -6,7 +6,7 @@ body{
 #container{
 	margin:0 auto;
 	padding-bottom: 30px;
-	max-width: 960px;
+	max-width: 900px;
 	width: 100%;
 	text-align: center;
 	}
@@ -21,11 +21,9 @@ body{
 	}
 
 .heroimg{
-	min-width: 10px;
-	display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
+	width:100%;
+	max-width: 900px;
+	text-align: center;
 }
 
   .headline{
